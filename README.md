@@ -28,7 +28,7 @@ You can find our code of conduct, cloned from p5.js, here: [CODE_OF_CONDUCT.md](
 - 1500 - 1630: Workshop
 - 1630 - 1700: Discussion
 
-For more information about the lectures, workshops and discussions, please see the website of the intensive: <https://jgl.github.io/ComputationalThinking2022>
+For more information about the lectures, workshops and discussions, please see the website of the intensive: <https://jgl.github.io/ComputationalThinkingIntensive2022>
 
 Code written in [p5.js](https://p5js.org/).
 

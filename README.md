@@ -1,6 +1,6 @@
-# Introduction To Creative Coding 2022
+# Introduction To Creative Computing 2022
 
-A series of lectures and workshops on Creative Coding delivered over a week in April 2022.
+A series of lectures and workshops on Creative Computing delivered over a week in April 2022.
 
 ## Code of Conduct
 
@@ -28,7 +28,7 @@ You can find our code of conduct, cloned from p5.js, here: [CODE_OF_CONDUCT.md](
 - 1500 - 1630: Workshop
 - 1630 - 1700: Discussion
 
-For more information about the lectures, workshops and discussions, please see the website of the intensive: <https://jgl.github.io/IntroductionToCreativeCoding2022>
+For more information about the lectures, workshops and discussions, please see the website of the intensive: <https://jgl.github.io/IntroductionToCreativeComputing2022>
 
 Code written in [p5.js](https://p5js.org/).
 

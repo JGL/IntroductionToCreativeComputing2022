@@ -28,6 +28,75 @@
   <div>
     UAL CCI: Introduction to Creative Computing Intensive 2022: Lecture 3: Functions and Drawing.<br /><a href="index.html">Back to slide index</a>.
   </div>
+  <div>By the end of this lecture, you'll know more about:
+    <ul>
+      <li>Drawing on paper - with me being a drawing robot</li>
+      <li>Going from 0 dimensions to 1 dimension to 2 dimensions</li>
+      <li>Drawing shapes in p5.js</li>
+      <li>The Voronoi Diagram</li>
+      <li>Our first interactive p5.js code</li>
+    </ul>
+  </div>
+  <div>The two main things we are going to think about today are various different functions and thinking in different numbers of dimensions - both feed into how to draw on computers.</div>
+  <div>Functions are things in JavaScript (and most programming languages) that take an input, do some work and then give an output - or things that you can ask a question of and you'll get an answer. This is the way that you create a function in JavaScript:
+    <pre>function addTwoNumbers(firstValue, secondValue) {
+  let answer = firstValue + secondValue;
+  return answer;
+}
+let myAnswer = addTwoNumbers(3, 5);
+//myAnswer is now 8
+</pre>
+    We have a function called addTwoNumbers (camelCase!), which takes two numbers as parameters, adds them together inside the function and then returns the answer. Some functions don't have any inputs and some don't have any outputs, but they all do something in the middle, otherwise there would be no point in calling them. The values you put into parameters are called arguments.</div>
+  <div> Dimensions could also be thought of as independent variables - like when you are drawing you might think about how far left and right you need to be on a page and (independently) how far up and down you need to be to draw the picture you want to.</div>
+  <div>I'm going to start by talking about drawing on paper, before looking at how we can draw on a computer using p5.js.</div>
+  <div>Drawing in black and white (or greyscale) using p5.js needs two things: <a href="https://en.wikipedia.org/wiki/Data_type">data types (either variables or constants)</a> and <a href="https://en.wikipedia.org/wiki/Subroutine">commands (or functions or subroutines)</a>.</div>
+  <div>Let's start with drawing on paper. How many numbers do you need to describe where you are on a piece of paper?</div>
+  <div>
+    To think about drawing on paper, let's try an exercise. One person is going to be the model, one person is going to be the blind drawing robot and one person is going to be the sighted drawing instruction robot - because this lecture is remote, I'm going to have to play all the roles for you!
+  </div>
+  <div>
+    <ul>
+      <li>Model - you have to make sure the blind drawing robot doesn't cheat, and pose your hand using a secret number of fingers.</li>
+      <li>Blind drawing robot - listen for commands.</li>
+      <li>Sighted drawing instruction robot - which command are you going to give first? You aren't allowed to say how many fingers the hand model is holding up, you can only say commands like "take off pen lid" or "move your hand down until I say stop".</li>
+      <li>Let's pick the number 8 to draw.</li>
+    </ul>
+  </div>
+  <div>What was hard (or funny) about that?</div>
+  <div>I had to be really precise with myself, right? I had to break up something simple like "Draw the number 8" into lots of smaller commands AND I had to have a way of saying where on the page the robot should draw. That's exactly what we are going to have do when we write drawing code in p5.js - a way of saying where we are on the screen and a way of drawing simple shapes that we can build up into more complicated ones.</div>
+  <div>
+    <ul>
+      <li>Starting with zero spatial (or physical space) dimensions - a point.</li>
+      <li>Moving from zero spatial dimensions to one and on to two or going from a point to line to a square.</li>
+      <li>Artwork: <a href="https://en.wikipedia.org/wiki/Flatland">Flatland by Edwin Abbott Abbott</a>.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>How do we describe points on a square or a flat piece of paper so that other people know where we are describing?</li>
+      <li>Formally: (x,y) pairs are used to describe <a href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system">Cartesian co-ordinates</a> in <a href="https://en.wikipedia.org/wiki/Euclidean_space">Euclidean space</a>.</li>
+      <li>X is for measuring how much left or right on the piece of paper, and Y is for measuring how much up or down on the piece of paper.</li>
+      <li>Y on computers is the opposite way to the way you learnt in school - because old computers scanned from the top down using <a href="https://en.wikipedia.org/wiki/Cathode_ray_tube">Cathode Ray Tubes</a>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Area">Area</a> - if you double the width and the height of a rectangle, area scales x4 NOT x2. Why?</li>
+      <li>Pythagoras' theorem is used to work out how big the longest side of a triangle with a right angle in it is - see proofs on <a href="https://en.wikipedia.org/wiki/Pythagorean_theorem">Wikipedia page</a> and <a href="https://betterexplained.com/articles/surprising-uses-of-the-pythagorean-theorem/">Better Explained</a>. P.S. <a href="https://betterexplained.com/cheatsheet/">Better Explained is AWESOME</a>!</li>
+    </ul>
+  </div>
+  <div>Let's go through <a href="https://p5js.org/examples/form-shape-primitives.html">the p5.js shape primitives example</a> together. You can use and edit any of the p5.js examples directly on their web pages, but I'm going to copy and paste them into the <a href="https://editor.p5js.org/">p5.js editor</a> so you see how to use it.</div>
+  <div>Let's go through <a href="https://p5js.org/examples/data-variables.html">the p5.js data variables example</a> together.</div>
+  <div>Let's go through this tutorial on <a href="https://p5js.org/learn/coordinate-system-and-shapes.html">Coordinate System and Shapes</a> together. Remember, a Co-ordinate system is a system for describing position.</div>
+  <div>
+    As well as commands that specify exact positions, you can use <a href="https://p5js.org/reference/#group-Transform">transformations</a> to move your digital drawing tool around like I commanded myself earlier. See <a href="https://p5js.org/examples/form-points-and-lines.html">this Points and Lines example</a> for how to use <a href="https://p5js.org/reference/#/p5/translate">translate()</a> to do that. You can also <a href="https://p5js.org/reference/#/p5/rotate">rotate()</a>, <a href="https://p5js.org/reference/#/p5/scale">scale().</a>
+  </div>
+  <div>N.B. you can use <a href="https://p5js.org/reference/#/p5/push">push()</a> and <a href="https://p5js.org/reference/#/p5/pop">pop()</a> to remember different drawing states. Chicken and egg in terms of colour, but I wanted you to know about push and pop, before we get on to some INTERACTION! </div>
+  <div>Now let's go through the <a href="https://p5js.org/get-started/">p5.js Get Started tutorial</a> together, using the p5.js editor. Remember the Chicken and Egg problem for teaching coding from the first lecture? We are going to encouter that here when you see an "if" statement. Don't worry about that for now, the most important thing is when we start using variables instead of constant (or fixed) values to draw with. This is the most important thing you are going to learn today and maybe for the whole course - that computers can have values that change over time, and that they'll do the work of changing them for you - allowing you to make INTERACTIVE animations or music or art or anything!</div>
+  <div>Now, I'd like to show you one more reference of the power of drawing and interaction, one that's enabled by a technical (or obsfucatory) term: The Voronoi diagram:</div>
+  <div>
+    <ul>
+      <li>The <a href="https://en.wikipedia.org/wiki/Voronoi_diagram">Voronoi diagram</a> is the diagram of boundaries between a set of points such that within the boundaries, one is closer to that point than any other.</li>
+      <li>The Voronoi diagram <a href="http://www.raymondhill.net/voronoi/rhill-voronoi.html">interactively</a>.</li>
+      <li>Artwork: <a href="https://www.snibbe.com/digital-art#/projects/interactive/boundaryfunctions/">Boundary Functions</a> by <a href="https://www.snibbe.com/">Scott Snibbe</a>.</li>
+    </ul>
+  </div>
   <div>
     Thanks! Time for a short break!
     <br />

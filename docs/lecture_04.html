@@ -28,6 +28,58 @@
   <div>
     UAL CCI: Introduction to Creative Computing Intensive 2022: Lecture 4: Deciding and Looping.<br /><a href="index.html">Back to slide index</a>.
   </div>
+  <div>By the end of this lecture, you'll know more about:
+    <ul>
+      <li>Logic in humans and computers</li>
+      <li>Some more about functions, namely recursion (a function that calls itself)</li>
+      <li>How to use logic and functions together in p5.js code</li>
+      <li>How to use everything we've learnt so far to make real time interaction happen using p5.js</li>
+      <li>Iteration - which is the obsfucatory term for repeating something several times</li>
+      <li>Loops - another word for iteration and the term you'll here the most in coding</li>
+      <li>The four different kinds of loops in p5.js</li>
+      <li>A whole series of examples of looping in p5.js</li>
+      <li>The concept of Scope in coding, and particularly in p5.js</li>
+    </ul>
+  </div>
+  <div>Computers use something called logic to decide what to do. Coding is all about refining sets of rules and consequences to tell a computer how to decide what to do and what do once the decision has been made.</div>
+  <div>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Boolean_algebra">Boolean algebra</a>, named after <a href="https://en.wikipedia.org/wiki/George_Boole">George Boole</a>. The <a href="https://en.wikipedia.org/wiki/Boolean_data_type">Boolean data type</a> is common to most programming languages, it only has two values: True (or 1) or False (or 0). One is true, nothing is false is how I remember it. What does something with only two values remind you of?</li>
+      <li>Control flow in programming is how you control the flow of which part of the program is executed next. <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#relational-ie-comparisons">Inside your control flow statements you'll use comparisons to decide how to compare things</a>.</li>
+      <li><a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#logical-ie-boolean-logic-tests">Boolean operators allow you to combine or invert boolean data types - AND (or &&), OR (or ||) and NOT (or !)</a>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Conditional_(computer_programming)">Conditional statements</a>, such as <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#if">if/else statements</a> are very common. You might also see something called a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">switch statement</a> - which is conceptually the same as lots of if statements in one place. BTW that new way of console.log()'ing variables uses something called <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">Template literals</a> - I use them all the time.</li>
+    </ul>
+  </div>
+  <div><a href="https://p5js.org/examples/structure-setup-and-draw.html">This example demonstrates the use of an if statement</a>. Let's try it cut and pasted into the p5.js editor. It's important to use { and } to enclose both functions AND if (or switch) statements. Those curly brackets help the computer decide something called <a href="https://en.wikipedia.org/wiki/Scope_(computer_science)">scope</a>, which is all about what values variables have.</div>
+  <div>
+    <ul>
+      <li>Remember from previous lecture - instead of writing long lists of commands, one after another, functions allow programmers to package up functionality into smaller mini programs, known as <a href="https://en.wikipedia.org/wiki/Subroutine">functions or subroutines</a>.</li>
+      <li>Functions take input(s) and return output(s) - an example might be a function that returns the square of an input number, or as complicated as <a href="https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy">the answer to everything</a>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Recursion">Recursion</a> is when something is defined in terms of itself. <a href="https://en.wikipedia.org/wiki/Recursion#Recursive_humor">Recursive humour is funny</a>. Recursion is also found in graphic design, art and cooking. In <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)">computer science recursion</a> is when a function calls itself repeatedly. The method of working out the <a href="https://en.wikipedia.org/wiki/Recursion_(computer_science)#Recursive_procedures">Factorial of any number</a> is a classic example.</li>
+      <li>A <a href="https://en.wikipedia.org/wiki/Fractal">fractal</a> is a good example of something that is visually recursive.</li>
+    </ul>
+  </div>
+  <div>Let's look at a <a href="https://p5js.org/examples/data-numbers.html">p5.js numbers example</a> to refresh our memory on the use of if statements and logical comparisons to decide how a program should behave.</div>
+  <div>Let's take a look at a <a href="https://p5js.org/examples/structure-redraw.html">p5.js example that makes use of three new functions</a> - <a href="https://p5js.org/reference/#/p5/noLoop">noLoop()</a>, <a href="https://p5js.org/reference/#/p5/mousePressed">mousePressed()</a> and <a href="https://p5js.org/reference/#/p5/redraw">redraw()</a>.</div>
+  <div>Let's take a look at a <a href="https://p5js.org/examples/drawing-continuous-lines.html">drawing continuous lines p5.js example</a> - what does this new <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#relational-ie-comparisons">===</a> thing mean? And what about <a href="https://p5js.org/reference/#/p5/pmouseX">pmouseX</a>? If you ever see something unknown in p5.js, where do you look it up?</div>
+  <div>Let's take a look at <a href="https://p5js.org/examples/math-distance-1d.html">this p5.js example on 1 dimensional distance</a> that makes a simple but pleasing mouse interaction.</div>
+  <div>To finish up with, let's work through <a href="https://p5js.org/learn/interactivity.html">the p5.js tutorial on interactivity</a> - combining all we've learned about using variables and logic to make experiences that react to users in real time. As I always say, "real time or it didn't happen" - or if that was pre-rendered, it's not interactive, it's just a film!</div>
+  <div>Iteration or looping or repeating is one of the most powerful tools for getting things done in coding. Loops let you repeat the same recipe or set of instructions or commands or block of code as many times as you like. You can set loops to run a set number of times, or for a certain period of time, or to run for every piece of information in a certain place (like for every entry in an address book) or even to run an interactive number of times (until the user presses a certain key for example).
+  </div>
+  <div>Let's look at the definition of <a href="https://en.wikipedia.org/wiki/Iteration">Iteration</a> - the <a href="https://en.wikipedia.org/wiki/Obfuscation">obsfucatory</a> term for repeating something several times.</div>
+  <div><a href="https://en.wikipedia.org/wiki/Control_flow#Loops">Loops</a> are just a part of the wider coding world of <a href="https://en.wikipedia.org/wiki/Control_flow">Control Flow</a>. We've already encountered some control flow with if/else statements and switch statements. Another way of thinking about loops is doing things many times, but using logic to stop. Boolean logic in our case.</div>
+  <div>The two most common kinds of loops are <a href="https://en.wikipedia.org/wiki/While_loop">while loops</a> and <a href="https://en.wikipedia.org/wiki/For_loop">for loops</a>.</div>
+  <div>Let's venture into the <a href="https://p5js.org/learn/program-flow.html">p5.js tutorial on program (or control) flow</a>, specifically the section on four different kinds of loops in p5.js. BTW - the structure of for loops is going to take a bit of time to get used to - before you know it you'll be typing them out automatically!</div>
+  <div>Let's take a look at <a href="https://p5js.org/examples/control-iteration.html">p5.js's control iteration example</a>, remember - iteration is just another word for repeating, or doing the same thing several times.</div>
+  <div>Let's take a look at <a href="https://p5js.org/examples/control-conditionals-1.html">a p5.js example that combines loops and if statements</a>. BTW: what does this % thing do? <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics">Where should we look</a>? There is <a href="https://www.quantamagazine.org/how-the-towering-p-adic-numbers-work-20201019/">a whole universe of thinking about number systems that loop</a>.</div>
+  <div><a href="https://p5js.org/examples/control-conditionals-2.html">A slightly more complicated example of using loops and conditionals (aka if/else statements).</a></div>
+  <div><a href="https://p5js.org/examples/control-logical-operators.html">An example that makes extensive use of logical operators (like AND, OR and NOT - or &&, || and !)</a>.</div>
+  <div><a href="https://p5js.org/examples/structure-functions.html">An example that combines for loops with a custom function</a>.</div>
+  <div><a href="https://p5js.org/examples/math-distance-2d.html">A beautiful example of using interactivity and a loop within a loop to generate a grid of ellipses (or circles)</a>.</div>
+  <div>As always, Daniel Shiffman has <a href="https://www.youtube.com/watch?v=cnRD9o6odjk">some great</a> videos <a href="https://www.youtube.com/watch?v=1c1_TMdf8b8">all about loops</a>.</div>
+  <div>BTW: it took me ages to realise, but <a href="https://en.wikipedia.org/wiki/Video_game_programming#Game_structure">most games are just one big while loop - "while the user hasn't pressed the ESC key (or Apple Q), keep running the main game loop"</a> - <a href="https://en.wikipedia.org/wiki/Event_loop">this is true even for operating systems</a>!</div>
+  <div>Let's take a look at a common bug that comes up when you are writing loops - issues around <a href="https://en.wikipedia.org/wiki/Scope_(computer_science)">the scope of variables</a>. Let's take a look at <a href="https://p5js.org/examples/data-variable-scope.html">a p5.js example about scope</a>.</div>
+  <div>Remember we saw push() and pop() this morning? Now see what we can do with a for loop too: <a href="https://p5js.org/examples/interaction-kaleidoscope.html">check out this advanced Kaleidoscope for some push() and pop() action.</a></div>
   <div>
     Thanks! Time for a short break!
     <br />

@@ -28,6 +28,123 @@
   <div>
     UAL CCI: Introduction to Creative Computing Intensive 2022: Lecture 5: Arrays and Classes.<br /><a href="index.html">Back to slide index</a>.
   </div>
+  <div>The two things I want you keep in mind today are that the computer science word for a list is an array and that you can use objects in your code to scale from one interesting thing to whole ecologies of interesting things, all reacting to each other.</div>
+  </div>
+  <div>By the end of this lecture, you'll know more about:
+    <ul>
+      <li>Going from a square to a cube</li>
+      <li>Going from a cube to a hypercube</li>
+      <li>Colour, Colour in the real world and Colour on digital computers</li>
+      <li>Lists or one dimensional arrays</li>
+      <li>Two dimensional arrays or lists that have a list for each of their entries</li>
+      <li>N (or any) dimensional arrays</li>
+      <li>JavaScript objects and how they can store lots of different types of information in one place</li>
+      <li>Two pioneers in computing, Seymour Papert and Alan Kay, and how they helped contribute to the creation of Graphical User Interfaces (GUI's) and a new way of programming that was invented to make that happen - Object Orientated Programming (OOP)</li>
+      <li>What OOP is, and how the idea of abstraction plays into it</li>
+      <li>How to do OOP using p5.js</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Going from a <a href="https://en.wikipedia.org/wiki/Square">square</a> to a <a href="https://en.wikipedia.org/wiki/Cube">cube</a>.</li>
+      <li>The third dimension is usually described in terms of a new letter: z.</li>
+      <li>The direction and orientation of the three dimensions varies in a similar way to the way the direction of y varies in two dimensions between high school graphs and digital screen co-ordinates, so always check which way is what.</li>
+      <li>See how <a href="https://betterexplained.com/articles/measure-any-distance-with-the-pythagorean-theorem/">Pythagoras works in three dimensions in this Better Explained article</a>.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>One way of storing three dimensional information is using <a href="https://en.wikipedia.org/wiki/Point_cloud">point clouds</a>.</li>
+      <li>The output of three dimensional scanners is often in point clouds - a grid of positions, each with a depth value - think of <a href="https://en.wikipedia.org/wiki/Pin_Art">Pin Art</a> toys from the 1980's.</li>
+      <li>Another way of storing three dimensional data is to use <a href="https://en.wikipedia.org/wiki/Voxel">Voxels</a> (from the initial letters of volume and element, with the insertion of -x- for ease of pronunciation).</li>
+      <li>Voxels can be a super efficient way of storing three dimension information - used for everything from MRI scanners to Minecraft.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Another way of storing three dimensional information is using a series of <a href="https://en.wikipedia.org/wiki/Polygon">polygons</a>.</li>
+      <li>Polygons are geometric objects with at least three straight lines and angles.</li>
+      <li>Polygons are plane figures - i.e. they are flat.</li>
+      <li>Some examples: <a href="https://en.wikipedia.org/wiki/Square">squares</a>, <a href="https://en.wikipedia.org/wiki/Triangle">triangles</a> and <a href="https://en.wikipedia.org/wiki/Pentagon">pentagons</a>.</li>
+      <li>Triangles are often used in three dimensional software and games - for more information about why this is so see this <a href="https://www.youtube.com/watch?v=KdyvizaygyY">Computerphile video about A Universe of Triangles</a>.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>A <a href="https://en.wikipedia.org/wiki/Polyhedron">Polyhedron</a> is a three dimensional shape made of multiple polygons.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Platonic_solid">The Platonic Solids</a> are a set of three dimensional shapes that have been known about since <a href="https://en.wikipedia.org/wiki/Ancient_Greece">Ancient Greece</a> and possibly back to <a href="https://en.wikipedia.org/wiki/Neolithic">Neolithic</a> times.</li>
+      <li><a href="http://paulbourke.net/">Paul Bourke maintains an amazing list of algorithms and code for dealing with: Geometry, Surfaces, Curves, Polyhedra, Fractals, Chaos, Self similarity, Photographic reconstruction, Domes, Planetariums, Fisheye, Spherical mirror, Stereographics and 3D Projection</a>. It's always my first place to check if I've got a geometric question.</li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>Going from Cube to <a href="https://en.wikipedia.org/wiki/Hypercube">Hypercube</a>.</li>
+      <li>You can also go from the Sphere to the <a href="https://en.wikipedia.org/wiki/Four-dimensional_space#Hypersphere">Hypersphere</a>.</li>
+      <li>You can also think of <a href="https://en.wikipedia.org/wiki/Time_in_physics">Time as the fourth dimension</a>.</li>
+      <li>You can use any variable as a new dimension, and measure distance between them using Pythagoras, as we saw in the previously.</li>
+      <li><a href="https://www.youtube.com/watch?v=2s4TqVAbfz4">Perfect Shapes in Higher Dimensions</a> from <a href="https://www.youtube.com/user/numberphile/featured">Numberphile</a>, which is a great channel to get lost in.</a></li>
+    </ul>
+  </div>
+  <div>Colouring using p5.js needs the same two thing as befores: variables and functions, but the variables will need to be multi-dimensional in order to be able to describe all the colours that we humans can see. Can you think of a way of storing several different values in one thing? How would you remember all the things you'd like to buy at the <a href="https://www.arts.ac.uk/study-at-ual/facilities/arts-shop">arts shop</a>? Another way to think about the idea of dimensions is just to think of how many different numbers (or any kind of data) we need to describe something - the most common you've encountered so far probably being space - or the spatial dimensions.</div>
+  <div>OK, now onto colour and colour on computers:</div>
+  <div>
+    <ul>
+      <li>You can map any three variables into three dimensions to help you think about them spatially (i.e. in physical space).</li>
+      <li>An example of this is mixing together Red, Green and Blue (<a href="https://en.wikipedia.org/wiki/RGB_color_model">RGB</a>) colours to make any other colour.</li>
+      <li>Digital colour mixing is <a href="https://en.wikipedia.org/wiki/Additive_color">additive</a> while analogue paint mixing is <a href="https://en.wikipedia.org/wiki/Subtractive_color">subtractive</a>.</li>
+      <li>How does projected light mix?</li>
+      <li>There are other ways of mixing variables to make colours - for example Hue, Saturation and Brightness (<a href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSB</a>).</li>
+      <li>I often use HSB in digital work to make it easy to blend between colours - much easier than RGB. You can visualise colour using a <a href="https://en.wikipedia.org/wiki/Color_wheel">colour wheel</a> or a <a href="https://en.wikipedia.org/wiki/Color_solid">colour solid</a>. <a href="https://en.wikipedia.org/wiki/Complementary_colors">Complementary colours</a> are on opposite sides of the colour wheel.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Color_theory">Colour theory</a> is a huge area of study, for graphic design and even <a href="https://en.wikipedia.org/wiki/Color_psychology">psychology</a>.</li>
+    </ul>
+  </div>
+  <div>
+    Rune Madsen's great series "Programming Design systems" has brilliant chapters on <a href="https://www.programmingdesignsystems.com/color/a-short-history-of-color-theory/index.html">A short history of color(sic) theory</a>, <a href=" https://www.programmingdesignsystems.com/color/color-models-and-color-spaces/index.html">Color(sic) models and color(sic) spaces</a> and <a href="https://www.programmingdesignsystems.com/color/perceptually-uniform-color-spaces/index.html">Perceptually uniform color(sic) spaces</a>. By the way, (<a href="https://en.wikipedia.org/wiki/Sic">sic</a>) means I know it's spelt wrong!
+  </div>
+  <div>Let's go through <a href="https://p5js.org/learn/color.html">the p5.js color (sic) tutorial</a> together.</div>
+  <div>Let's take a look at <a href="https://p5js.org/examples/color-color-variables.html">two ways of storing colour information in p5.js</a>.</div>
+  <div>Lists or one dimensional arrays.</div>
+  <div>You are all familiar with shopping or todo lists. The coding terms for those things would be one dimensional arrays. Let's take a look at what <a href="https://javascript.info/array">The Modern JavaScript Tutorial says about arrays</a>. Remember - Strings are just arrays of Chars or characters.</div>
+  <div>Two dimensional arrays or lists that have a list for each of their entries.</div>
+  <div>Instead of a char, an integer, a float in each position in an array, what if you stored an array there? Then you'd have a list of lists, or a two dimensional arrays. Can you think of a type of information that you look at every day that might be well suited to storing in a two dimensional array? Something with a width and a height perhaps?</div>
+  <div>An image!</div>
+  <div>Question, how might you store a two dimensional array within a one dimensional one?</div>
+  <div>Just make a big one dimensional array and put each row of the two dimensional array side by side!</div>
+  <div>N (or any) dimensional arrays.</div>
+  <div>You can use arrays to hold other arrays that might hold other arrays, and on and on and on and on. Multi-dimensional data is something that Machine Learning makes use of and generates alot of. Being able to relate multiple dimensions to each other is a key activity in all science and one that you should develop. <a href="http://datavis.ca/papers/history-dynamic-graphics-2x2.pdf">See this great paper - "The Prehistory of Dynamic & Interactive Graphics: Visualizing Time and Motion"</a>, as well as this <a href="https://www.youtube.com/watch?v=B7XoW2qiFUA">documentary about an early multi-dimensional data visualisation system - Prim~9</a>.</div>
+  <div>Let's take a look at some p5.js examples that use arrays.</div>
+  <div><a href="https://p5js.org/examples/interaction-follow-3.html">https://p5js.org/examples/interaction-follow-3.html</a> - this example combines one dimensional arrays, trigonometry, and push() and pop() drawing.</div>
+  <div><a href="https://p5js.org/examples/arrays-array-2d.html">https://p5js.org/examples/arrays-array-2d.html</a> - this example combines a two dimensional array with use of the dist() function. Let's try changing the spacer value.</div>
+  <div>JavaScript objects and how they can store lots of different types of information in one place.</div>
+  <div>We encountered JavaScript objects before when we found out about the for..in loop <a href=" https://p5js.org/learn/program-flow.html">via the p5.js "Program Flow" tutorial</a>. Let's take a look at what <a href="https://javascript.info/object">The Modern JavaScript Tutorial says about objects</a>.</div>
+  <div>The power of object orientated programming (OOP) is that we can combine data and logic together - this makes it much easier to build really large scale software systems, and to share those systems with others - often known as libraries of code. Libraries of code can be abstracted into <a href="https://en.wikipedia.org/wiki/API">Application Programming Interfaces (API's)</a> - which is a way of abstracting a load of complexity behind a series of commands and formats of data. For example, Google, Amazon, Microsoft and Apple all provide API's to their operating systems (either locally or on the cloud).</div>
+  <div>Two pioneers in computing, Seymour Papert and Alan Kay, and how they helped contribute to the creation of Graphical User Interfaces (GUI's) and a new way of programming that was invented to make that happen - Object Orientated Programming (OOP).</div>
+  <div>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Seymour_Papert">Seymour Papert</a> was interested in learning theories - especially in how computers could make a difference in how children learn. <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a> was the first computer language that I encountered as a child - all based around drawing with a <a href="https://en.wikipedia.org/wiki/Turtle_(robot)">Turtle</a>.</li>
+      <li>Papert pioneered the idea of Microworlds - places where you could safely experiment to think about how to change the future, rather than train children for the jobs of today.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Alan_Kay">Alan Kay</a> was inspired by Papert and others and went on to pioneer thinking around <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">Object Orientated programming</a> and <a href="https://en.wikipedia.org/wiki/Window_(computing)">Overlapping Window Graphical User Interfaces</a> both at <a href="https://en.wikipedia.org/wiki/PARC_(company)">Xerox Parc</a>.</li>
+      <li>Three great talks by Kay: <a href="https://www.youtube.com/watch?v=gTAghAJcO1o">The Future Doesn't Have to Be Incremental</a>, <a href="https://www.youtube.com/watch?v=FvmTSpJU-Xc">Normal Considered Harmful</a> and <a href="https://www.youtube.com/watch?v=R1R2jH4PQEo">Education That Takes Us To The 22nd Century</a>.</li>
+    </ul>
+  </div>
+  <div>What OOP is, and how the idea of abstraction plays into it.</div>
+  <div>
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Abstraction">Abstraction</a> is a concept that has been applied to many fields, including <a href="https://en.wikipedia.org/wiki/Abstract_art">art</a> and <a href="https://en.wikipedia.org/wiki/Abstraction_(computer_science)">computer science</a>.</li>
+      <li>Abstraction is a key feature of <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">object orientated programming</a>. OOP allows you to combine logic and data into one place.</li>
+      <li><a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a> is an example of an object orientated language. <a href="https://en.wikipedia.org/wiki/C_%28programming_language%29">C</a> was one of its predecessors and functional. The ++ means increment, hence C++ being one better than C. (-;</li>
+      <li>Some language in OOP - a <a href="https://en.wikipedia.org/wiki/Class_(computer_programming)">class</a> is the word for the code that combines data and <a href=" https://en.wikipedia.org/wiki/Method_(computer_programming)">method</a>s (method is the word for a function in OOP) in to one place for one object. To make a variable (or object) out of a class you need to instantiate it with the new command. An object is an <a href=" https://en.wikipedia.org/wiki/Instance_(computer_science)">instance of a class</a>.
+      <li>There are many <a href="https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms">different ways of programming, also known as paradigms</a>.</li>
+      <li>Two amusing languages are <a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a> and <a href="https://en.wikipedia.org/wiki/Whitespace_(programming_language)">Whitespace</a>, there are many other <a href="https://en.wikipedia.org/wiki/Esoteric_programming_language">Esoteric languages</a>. (-;</li>
+    </ul>
+  </div>
+  <div>How to do OOP using p5.js - time for lots of chickens and eggs to come together!</div>
+  <div><a href="https://p5js.org/examples/objects-objects.html">https://p5js.org/examples/objects-objects.html</a></div>
+  <div><a href="https://p5js.org/examples/objects-multiple-objects.html">https://p5js.org/examples/objects-multiple-objects.html</a></div>
+  <div><a href="https://p5js.org/examples/objects-array-of-objects.html">https://p5js.org/examples/objects-array-of-objects.html</a></div>
+  <div><a href="https://p5js.org/examples/objects-objects-2.html">https://p5js.org/examples/objects-objects-2.html</a></div>
+  <div><a href="https://p5js.org/examples/objects-composite-objects.html">https://p5js.org/examples/objects-composite-objects.html</a></div>
+  <div>As well as Abstraction, <a href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)">Encapsulation is an important concept in OOP</a>. A way of thinking about it is sealing away data from other bits of code - only the methods of an object should be able to get at it's data - i.e. no direct access to data - only via methods. Please see <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr">Daniel Shiffman's Coding Train playlist on "Topics of JavaScript/ES6-ES8"</a>, especially the videos on <a href="https://www.youtube.com/watch?v=T-HGdc8L-7w">Classes in JavaScript with ES6</a> and <a href="https://www.youtube.com/watch?v=MfxBfRD0FVU">Inheritance in JavaScript</a>. FYI <a href="https://en.wikipedia.org/wiki/ECMAScript">ES6 and ES8 are just acronyms for new versions of JavaScript</a>. All the numberings are confusing, don't worry.</div>
   <div>
     Thanks! Time for a short break!
     <br />

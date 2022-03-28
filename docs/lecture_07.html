@@ -28,6 +28,35 @@
   <div>
     UAL CCI: Introduction to Creative Computing Intensive 2022: Lecture 7: Scaling and Waves.<br /><a href="index.html">Back to slide index</a>.
   </div>
+  <div>By the end of this lecture, you'll know more about:
+    <ul>
+      <li>How to use lerp() and map() functions to scale variables between different values</li>
+      <li>Bringing everything we've learnt today into a pair of examples that use two functions (Sine and Cosine) to make beautiful animations in p5.js</li>
+    </ul>
+  </div>
+  <div>How to use lerp() and map() functions to scale variables between different values.</div>
+  <div>Let's take a look at the p5.js reference page for the <a href="https://p5js.org/reference/#/p5/lerp">lerp()</a> function and the <a href="https://p5js.org/reference/#/p5/map">map()</a> function.</div>
+  <div>Let's take a look at <a href="https://p5js.org/examples/math-map.html">the p5.js map example</a> to see how to use the map() function to take a mouse position and turn it into the radius and colour of a circle. This is a very powerful technique - taking one input value and scaling it to lots of different types of information - radius, colour or anything we like. One way to think of it is to think of taking a range of values and scaling them to a value between 0 and 1 - then you can take that value and scale to any other value. If you can get your values to 0-1 you can take that signal and apply it anywhere, to anything.</div>
+  <div>This idea of 0-1 values for anything is beautifully illustrated in the video below:<iframe src="https://player.vimeo.com/video/231498722?color=ffffff&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/231498722">Unendurable line｜ガマンぎりぎりライン</a> from <a href="https://vimeo.com/daiheishibata">daihei shibata</a>.</p>
+  </div>
+  <div>Let's take a look at p5.js <a href="https://p5js.org/examples/input-easing.html">easing example to see how to create animation that follows the user's mouse</a>. We can also use the <a href="https://p5js.org/examples/math-linear-interpolation.html">lerp() function to do this</a> - this is known as <a href="https://en.wikipedia.org/wiki/Linear_interpolation">linear interpolation, or how to blend between known values</a>.</div>
+  <div>Let's take a look at <a href="https://p5js.org/examples/color-lerp-color.html">the p5.js lerp colour example to see how the random() function can be used for infinite graphical output</a>.</div>
+  <div>
+    <ul>
+      <li>What is a <a href="https://en.wikipedia.org/wiki/Circle">circle</a>? It is "the set of all points in a (flat)plane that are at a given distance from a given point".</li>
+      <li><a href="https://betterexplained.com/articles/a-gentle-introduction-to-learning-calculus/">A Gentle Introduction To Learning Calculus</a> from Better Explained. Calculus is the formal name for thinking about graphs - the area under a curve (or the integral) or how steep a curve is (the differential).</li>
+      <li>Sine waves are curves that go up and down in a regular way forever. <a href="https://betterexplained.com/articles/intuitive-understanding-of-sine-waves/">Intuitive Understanding of Sine Waves</a>.</li>
+      <li>How to work out the size of angles in a triangle using the lengths of a triangle or other angles aka Sine and cosine and tangent functions aka <a href="https://betterexplained.com/articles/intuitive-trigonometry/">Trigonometry</a> again, from Better Explained.</li>
+      <li>Stop press! <a href="https://calculusmadeeasy.org/">A web version of a classic book on "Calculus Made Easy"</a> - I knew it was good when I <a href="https://calculusmadeeasy.org/prologue.html">read the prologue</a>.</li>
+    </ul>
+  </div>
+  <div>Finally, let's bring all the new things we've learnt so far about drawing and colouring to make some animations using colour and sine and cosine:</div>
+  <div><a href="https://p5js.org/examples/math-sine.html">https://p5js.org/examples/math-sine.html</a></div>
+  <div><a href="https://p5js.org/examples/math-sine-cosine.html">https://p5js.org/examples/math-sine-cosine.html</a></div>
+  <div>In each of those last two examples, what if we used interactive variables (like mouse position) instead of just adding on to (<a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#mathematical">or incrementing or the ++ symbol</a>) the angle variable every frame? 🤯</div>
+  <div><a href="https://p5js.org/examples/interaction-follow-1.html">Bringing together drawing, transformations and push and pop to make a lovely follow interaction</a>.</div>
+  <div>Finally, let's take a look at this <a href="https://p5js.org/examples/interaction-wavemaker.html">beautiful animated example that uses animation, interaction and a loop within a loop</a>. What happens if you play with the background command? What is it doing in this case?</div>
   <div>
     Thanks! Time for a short break!
     <br />

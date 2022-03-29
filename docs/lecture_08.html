@@ -22,14 +22,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
   <!-- favicons generated at https://favicon.io/favicon-generator/ -->
+  <style>
+    body {
+      background-color: #EDD1B0;
+    }
+  </style>
 </head>
 
 <body>
   <div>
     UAL CCI: Introduction to Creative Computing Intensive 2022: Lecture 8: Time and Algorithms.<br /><a href="index.html">Back to slide index</a>.
   </div>
-  <div>I promise that by the end of this lecture you'll be able to understand how you can use timing to make different things happen at different times in your code.</div>
-  <div>The main thing I want you keep in mind today is that you can use time based code to have logic run at certain times or to animate content smoothly or even to only run when certain conditions have been met. </div>
+  <div>The two main thing I want you keep in mind this afternoon is that you can use algorithms to make decisions in your programs and you can use time in your code to trigger things and to animate smoothly.</div>
   <div>By the end of this lecture, you'll know more about:
     <ul>
       <li>How to preload images and other content into your p5.js sketches</li>
@@ -41,7 +45,6 @@
       <li>An algorithm to work out if something is off the screen</li>
       <li>An algorithm to work out if a mouse is over a rectangle or a circle</li>
       <li>An algorithm to sort things</li>
-      <li>An algorithm to solve a maze (graph things etc? add all the graph theory things? bridges of konisgsberg / travelling salesman)</li>
     </ul>
   </div>
   <div>How to preload images and other content into your p5.js sketches and how to have code run when a user clicks their mouse or presses a certain key.</div>
@@ -62,6 +65,10 @@
   <div>We've already seen the use of <a href="https://p5js.org/learn/program-flow.html">setInterval() in the p5.js program flow tutorial</a>. Let's take a look at <a href="https://javascript.info/settimeout-setinterval">how The Modern JavaScript tutorial describes it and a similar function - setTimeOut()</a>.</div>
   <div>I used this functionality to <a href="https://jgl.github.io/DesignAgainstCrimeIdentity/verticalKick/index.html">change the physics simulation</a> that I used to <a href="https://jgl.github.io/DesignAgainstCrimeIdentity/">make an identity for a CSM research group</a>.</div>
   <div>Let's <a href="https://javascript.info/async">see what The Modern JavaScript tutorial says about asynchronicity</a>. This is the most advanced code we've yet encountered - and it's gone a bit chicken and egg again. Take a look at <a href="https://www.youtube.com/watch?v=QO4NXhWo_NM&list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx">The Coding Train playlist about asynchronicity to learn more</a> (this is part of a <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr">larger playlist about ES6, which an upgraded version of JavaScript that launched a few years ago</a>)</div>
+  <div>What is an <a href="https://en.wikipedia.org/wiki/Algorithm">Algorithm</a>? I like to think of them as a list of instructions, with some logic inside to decide which instruction to do next. Much like a program in fact! Let's take a look <a href="https://en.wikipedia.org/wiki/Algorithm#Algorithm_example">at an algorithm to find the biggest number in a list of numbers</a>, what's another name for a list?</div>
+  <div>An algorithm to work out if something is off the screen. Let's code this together from scratch. I find working on paper (or whiteboards) really helpful for this.</div>
+  <div>An algorithm to work out if a mouse is over a rectangle or a circle. Let's code this together from scratch. What are the conditions that must be true if a mouse is over a rectangle? And a circle?</div>
+  <div>An algorithm to sort things. <a href="https://en.wikipedia.org/wiki/Sorting_algorithm">There are many sorting algorithms</a>, one of my favourites is <a href="https://en.wikipedia.org/wiki/Quicksort">Quicksort</a>. Let's take a look at some of the animations on that page.</div>
   <div>
     Thanks! Time for a short break!
     <br />

@@ -16,14 +16,14 @@
   <script src="big.js"></script>
   <link href="themes/lightWhite.css" rel="stylesheet" type="text/css" />
 
-	<!-- Favicon link below, via https://emojitofavicon.com -->
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
-	<link rel="manifest" href="site.webmanifest">
+  <!-- Favicon link below, via https://emojitofavicon.com -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖🏻</text></svg>">
+  <link rel="manifest" href="site.webmanifest">
 
-	<!-- Twitter Card fun: https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@joelgethinlewis" />
-	<meta name="twitter:creator" content="@joelgethinlewis" />
+  <!-- Twitter Card fun: https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@joelgethinlewis" />
+  <meta name="twitter:creator" content="@joelgethinlewis" />
   <style>
     body {
       background-color: #EDD1B0;
@@ -57,7 +57,7 @@
   <div>We are going to start this lecture series by learning about counting, specifically binary numbers, what they are and why computers use them.</div>
   <div>Then we are going to learn about how computers remember information. Computers store this information in things called constants (if they never change) or variables (if they change). Constants are useful (for things like Pi or the number of days in a week), but we are going to use variables much more.</div>
   <div>All that computers do is remember things by storing data (as constants or variables) and change those memories through commands. One thing they are very good at is remembering a number and then adding to it. If you want to read a great book on how computers work from the ground up, I recommend <a href="https://www.charlespetzold.com/code/">Code by Charles Pertzold</a>.</div>
-  <div>One of my favourite pioneers in the world of computing is <a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a>. Here is a great video where she <a href="https://www.youtube.com/watch?v=9eyFDBPk4Yw">explains what a nanosecond is - in terms of distance travelled at the speed of light in that time</a>. (BTW, <a href="https://www.youtube.com/watch?v=ZR0ujwlvbkQ">the whole lecture is well worth watching</a>). Amongst other things, Grace Hoppper invented the compiler - which is how a computer turns a bunch of (human readable)code into a bunch of binary that it can understand natively. The same thing is going to happen to your p5.js code (or sketches) - when you press run on the p5.js online editor, the JavaScript code is translated into machine friendly forms, which are eventually run as binary on your own computer.</div>
+  <div>One of my favourite pioneers in the world of computing is <a href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a>. Here is a great video where she <a href="https://www.youtube.com/watch?v=9eyFDBPk4Yw">explains what a nanosecond is - in terms of distance travelled at the speed of light in that time</a>. (BTW, <a href="https://www.youtube.com/watch?v=ZR0ujwlvbkQ">the whole lecture is well worth watching</a>). Amongst other things, Grace Hopper invented the compiler - which is how a computer turns a bunch of (human readable)code into a bunch of binary that it can understand natively. The same thing is going to happen to your p5.js code (or sketches) - when you press run on the p5.js online editor, the JavaScript code is translated into machine friendly forms, which are eventually run as binary on your own computer.</div>
   <div>Now, finally, to counting. What is counting?</div>
   <div>
     Counting is using groups of symbols to represent quantities or amounts. Let's count to 100 in <a href="https://en.wikipedia.org/wiki/Decimal">Decimal</a>. When do
@@ -69,7 +69,7 @@
     do we need an extra digit?
   </div>
   <div>
-    What's the biggest number you can count to on your fingers in decimal? What about in binary? What about if you use your fingers AND toes?
+    What's the biggest number you can count to on your fingers in unary (or the way you were taught as a child)? What about in binary? What about if you use your fingers AND toes?
   </div>
   <div>Tell the binary joke Joel!</div>
   <div>I loved this visualisation of a mechanical binary counter: <blockquote class="twitter-tweet">
@@ -127,7 +127,7 @@
       <li>Here is <a href="https://editor.p5js.org/benmoren/sketches/AInooo_4o">a fun Unicode example written in p5.js</a>.</li>
     </ul>
   </div>
-  <div>Let's try out some JavaScript variables by going through the <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics">JavaScript basic's page on the p5.js wiki</a>, all the way up to the <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#maths-functions">Math (sic) functions section</a>. You are going to encounter "functions" while I go through the page - they are just ways of packaging up several commands in one bigger command - remember that computers only remember things and change those memories with commands.</div>
+  <div>Let's try out some JavaScript variables by going through the <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics">JavaScript basics page on the p5.js wiki</a>, all the way up to the <a href="https://github.com/processing/p5.js/wiki/JavaScript-basics#maths-functions">Math (sic) functions section</a>. You are going to encounter "functions" while I go through the page - they are just ways of packaging up several commands in one bigger command - remember that computers only remember things and change those memories with commands.</div>
   <div>All lines in JavaScript must finish with a ";" - it's just a way that the computer works out which line is which.</div>
   <div>The two really important things I want you to remember from that is that you can use the "let" keyword to make new data (or variables) - e.g. <i>let myName = "Joel";</i> and that you can do things with data using commands (or functions) - e.g. <i>console.log(myName);</i>, which prints out the value of myName ("Joel") to the JavaScript console.</div>
   <div>Let's finish with two films about the scale of the universe and the scale of numbers.</div>
